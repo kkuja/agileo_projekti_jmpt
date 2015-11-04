@@ -1,0 +1,7 @@
+fi/agileo/spring/e14/bean/Henkilo.class
+fi/agileo/spring/e14/dao/HenkiloaEiLoydyPoikkeus.class
+fi/agileo/spring/e14/dao/HenkiloDAOSpringJdbcImpl$1.class
+fi/agileo/spring/e14/dao/HenkiloRowMapper.class
+fi/agileo/spring/e14/controller/HenkiloController.class
+fi/agileo/spring/e14/dao/HenkiloDAO.class
+fi/agileo/spring/e14/dao/HenkiloDAOSpringJdbcImpl.class

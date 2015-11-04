@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Spring Esimerkki 14</title>
+<title>Asterix</title>
 <link rel="stylesheet" type="text/css" href="resources/styles/common.css">
 </head>
 <body>

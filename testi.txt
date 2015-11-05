@@ -2,12 +2,12 @@
 # Tässä käskyt mitä Pasin pitäisi ajaa, että saa githubiin nätistä uuden version projektista
 # Nämä risuaidalla varustetut on kommentteja.
 
-# Mevarmistetaan että ollaan kotihakemisto, ja luodaan uusi hakemisto.
+# Varmistetaan että ollaan kotihakemisto, ja luodaan uusi hakemisto. (Tämä on optionaalinen, kunhan muuten pitää huolta että on oikeassa/sopivassa hakemistossa)
 cd ~
 mkdir siirto
 cd siirto
 
-# Haetaan nykyinen master branch tänne.
+# Haetaan nykyinen master branch tänne. (tai halutessa varmaankin myös git pull vanhassa hakemistossa riittää.)
 git clone https://github.com/kkuja/agileo_projekti_jmpt.git
 
 # Luodaan uusi branch.
@@ -21,8 +21,8 @@ git add *
 git commit -a -m "Pasin version initial upload"
 git push origin pr001
 
-# Ja jos kaikki meni oikein, on nyt kaikilla githubissa näkyiss� uusi branch pr001, jossa on Pasin tekemä koodi.
-# Sen saa sitten käyttöön kun ajaa seuraavat käskyt:
+# Ja jos kaikki meni oikein, on nyt kaikilla githubissa näkyissÃ uusi branch pr001, jossa on Pasin tekemä koodi.
+# Sen saa sitten käyttöönsä kun ajaa seuraavat käskyt:
 
 git pull
 git checkout pr001

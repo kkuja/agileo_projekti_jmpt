@@ -1,10 +1,30 @@
 # Uuden branchin tekeminen (Testaan Pasin aloitus versiota varten.)
+# Tässä käskyt mitä Pasin pitäisi ajaa, että saa githubiin nätistä uuden version projektista
+# Nämä risuaidalla varustetut on kommentteja.
 
-git checkout -b branchname
-git commit -a -m "Uusi branch luotu"
+# Mevarmistetaan että ollaan kotihakemisto, ja luodaan uusi hakemisto.
+cd ~
+mkdir siirto
+cd siirto
 
+# Haetaan nykyinen master branch tänne.
+git clone https://github.com/kkuja/agileo_projekti_jmpt.git
 
-# Tämä branch luotiin:
+# Luodaan uusi branch.
+git checkout -b pr001
 
-git checkout -b branchname
-git commit -a -m "Testi branch luotu"
+# Poistetaan vanha asterix hakemisto, ja kopioidaan uusi Eclipse projekti tilalle.
+# Tähän ei voi antaa suoria käskyjä, koska ne riippuvat uuden version nimestä jne.
+
+# lisLisätään tiedostot githubiin
+git add *
+git commit -a -m "Pasin version initial upload"
+git push origin pr001
+
+# Ja jos kaikki meni oikein, on nyt kaikilla githubissa näkyiss� uusi branch pr001, jossa on Pasin tekemä koodi.
+# Sen saa sitten käyttöön kun ajaa seuraavat käskyt:
+
+git pull
+git checkout pr001
+
+# Tämän branchin mergettämistä masteriin en ole vielä selvittänyt, mutta teen sen pian.

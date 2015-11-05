@@ -1,0 +1,10 @@
+# Uuden branchin tekeminen (Testaan Pasin aloitus versiota varten.)
+
+git checkout -b branchname
+git commit -a -m "Uusi branch luotu"
+
+
+# Tämä branch luotiin:
+
+git checkout -b branchname
+git commit -a -m "Testi branch luotu"

@@ -1,5 +1,6 @@
 
 <%@ include file="../header.jsp" %>
-<h1>Biller page</h1>>
+<h3>Welcome <sec:authentication property="principal.username"/> to the Asterix CRM System</h3>
+<h1>Biller page</h1>
 
 <%@ include file="../footer.jsp" %>

@@ -5,13 +5,13 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <html>
 <head>
-<title>Sisäänkirjautuminen</title>
+<title>Login page</title>
 <link rel="stylesheet" href="resources/styles/common.css" type="text/css" />
 <link rel="stylesheet" href="resources/styles/form.css" type="text/css" />
 </head>
 <body>
 	<div id="sisalto">
-	<h1>LOG IN</h1>
+	<h1>Sign in</h1>
 
 	<c:if test="${not empty loginerror}">
 		<p class="Error">Login Failed. The username or password is incorrect.</p>
@@ -24,8 +24,8 @@
 	<form action="j_spring_security_check" method="post">
 	<fieldset>
 		<table>
-		<tr><td>USERNAME:</td><td><input type='text' name='j_username' value=''></td></tr>
-		<tr><td>PASSWORD:</td><td><input type='password' name='j_password' /></td></tr>
+		<tr><td>Username:</td><td><input type='text' name='j_username' value=''></td></tr>
+		<tr><td>Password:</td><td><input type='password' name='j_password' /></td></tr>
 		<tr><td>&nbsp;</td><td><button type="submit">Log in</button></td></tr>
 		</table>
 	</fieldset>

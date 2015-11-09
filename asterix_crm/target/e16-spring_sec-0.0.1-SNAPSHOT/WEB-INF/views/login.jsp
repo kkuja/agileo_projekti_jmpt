@@ -26,7 +26,7 @@
 		<table>
 		<tr><td>Username:</td><td><input type='text' name='j_username' value=''></td></tr>
 		<tr><td>Password:</td><td><input type='password' name='j_password' /></td></tr>
-		<tr><td>&nbsp;</td><td><button type="submit">Log in</button></td></tr>
+		<tr><td>&nbsp;</td><td align="center"><button type="submit">Sign in</button></td></tr>
 		</table>
 	</fieldset>
 	</form>

@@ -3,8 +3,13 @@ fi/agileo/spring/e16/controller/CustomerServantController.class
 fi/agileo/spring/e16/controller/SecureController.class
 fi/agileo/spring/e16/controller/LoginController.class
 fi/agileo/spring/e16/controller/AdminController.class
+<<<<<<< HEAD
 fi/agileo/spring/e16/controller/BillerController.class
 fi/agileo/spring/e16/controller/TechnicianController.class
+=======
+fi/agileo/spring/e16/controller/TechnicianController.class
+fi/agileo/spring/e16/controller/BillerController.class
+>>>>>>> dc6270d5568ec1d70cd94db1afdba88c9ab4d711
 fi/agileo/spring/e16/controller/SalespersonController.class
 fi/agileo/spring/e16/util/SalasanaKryptaajaKomentoriviClient.class
 fi/agileo/spring/e16/controller/BossController.class

@@ -1,5 +1,9 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Built-By: oppi11
+=======
+Built-By: oppi9
+>>>>>>> dc6270d5568ec1d70cd94db1afdba88c9ab4d711
 Build-Jdk: 1.8.0_60
 Created-By: Maven Integration for Eclipse
 

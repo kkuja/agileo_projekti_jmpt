@@ -16,7 +16,7 @@
 <sec:authentication property="authorities" var="roles" scope="page" />
 <table style="width:100%" border="0">
   <tr>
-    <td align="left">Logged in: <sec:authentication property="principal.username"/></td>
+    <td align="left"><img src="../../resources/images/user.png" title="Logged in"  style="width:40px;height:40px;"><sec:authentication property="principal.username"/></td>
 	<c:choose>
 	    <c:when test="${fn:length(roles)>1}">    
     		<td align="center"><a href="../main">Main page</a></td>

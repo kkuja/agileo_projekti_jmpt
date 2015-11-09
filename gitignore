@@ -1,3 +1,6 @@
-*/.DS_Store
-*/build
-*/target
+**/.DS_Store
+**/build
+**/target
+**/.project
+**/.settings
+**/.classpath

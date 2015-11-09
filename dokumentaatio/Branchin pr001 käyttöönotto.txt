@@ -1,0 +1,69 @@
+
+BRANCH PR001﻿
+
+Projektissa käytetään jatkossa branchia pr001 päivittäisessä työskentelyssä.
+Eli kaikki push, pull ja commit komennot tehdään tässä branchissa.
+
+Projektin Master branch on erikseen (Jukka hoitaa julkaisuversioiden liittämiset tähän branchiin julkaisupäivinä). 
+
+
+
+BRANCHIN PR001 KÄYTTÖÖNOTTO ENSIMMÄISELLÄ KERRALLA
+
+Lataaminen gitistä uuteen projektikansioon:
+
+1. Luo uusi kansio STS:n workspacea varten koneellesi.
+
+2. Mene Terminalissa edellä luomaasi kansioon: 
+Kirjoita "git clone https://github.com/kkuja/agileo_projekti_Jmpt.git"
+
+3. Avaa Terminalissa juuri ilmestynyt kansio "agileo_projekti_Jmpt" 
+ja kirjoita branchin vaihtamiseksi uuteen branchiin nimeltä pr001:
+
+git checkout pr001
+
+4. Avaa sitten STS.
+
+Ensimmäisellä kerralla importtaa projekti STS:ään seuraavasti:
+
+import... => General => Existing project into Workspace => Valitse kansion "agileo_projekti_Jmpt alta kansio "asterix_crm".
+
+Odota kunnes STS saa toiminnot "Building workspace" ja "Validating asterix_crm" valmiiksi (100%).
+
+5. Luo seuraavaksi koneellesi kehitystyössä tarvittava tietokanta:
+
+Tietokannan luomiseen tarvittavat skriptit löytyvyt projektin kansiosta "database".
+	1. Avaa MySQL.
+	2. Aja tietokanssa seuraavan tiedoston sisältö: "create_database_mysql.sql"
+	3. Seuraavaksi luo taulut kantaan tiedostosta: "create_tables_mysql.sql"
+	4. Viimeksi luotoihun tauluihin sisältöä tiedostosta: "insert_test_data_mysql.sql"
+
+6. Palaa STS:ään. Testaa importin toimivuus.
+
+Aja komennot Maven clean ja Maven install.
+
+Anna sitten komento Run As => "Run On Server".
+Server: Tomcat.
+
+Jos serveriä ei ole asennettu projektiin:
+File => New => Other => Server => Server => Apache => Valitse Tomcat v.7.0. Lisää samalla välilehdellä 
+server runtime environmentiin Tomcatin asennuskansio (löytyy software-kansiossa koneeltasi) (painike Add... => Browse).
+
+Avaa selain:
+http://localhost:8080/e16-spring_sec-0.0.1-SNAPSHOT/
+
+
+
+
+
+PÄIVITTÄINEN TYÖSKENTELY BRANCHISSA PR001
+
+Myöhemmin käyttöönoton jälkeen: 
+
+1. Mene Terminalissa projektin workspacen kansioon.
+
+2. 
+
+
+
+

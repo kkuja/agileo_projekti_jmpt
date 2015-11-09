@@ -3,4 +3,9 @@
 **/target
 **/.project
 **/.settings
+<<<<<<< HEAD
 **/.classpath
+=======
+**/.classpath
+**/*.log
+>>>>>>> 262431c0acf5dbea0dc4ef3c9edee4ec1e5ccc55

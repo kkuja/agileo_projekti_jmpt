@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /home/oppi1/asterix_2/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/CustomerServantController.java
 /home/oppi1/asterix_2/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/SalespersonController.java
 /home/oppi1/asterix_2/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/SecureController.java
@@ -8,3 +9,28 @@
 /home/oppi1/asterix_2/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/LoginController.java
 /home/oppi1/asterix_2/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/SecretaryController.java
 /home/oppi1/asterix_2/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/BillerController.java
+=======
+<<<<<<< HEAD
+/home/oppi11/pro01/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/SecureController.java
+/home/oppi11/pro01/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/CustomerServantController.java
+/home/oppi11/pro01/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/SalespersonController.java
+/home/oppi11/pro01/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/TechnicianController.java
+/home/oppi11/pro01/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/BossController.java
+/home/oppi11/pro01/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/SecretaryController.java
+/home/oppi11/pro01/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/util/SalasanaKryptaajaKomentoriviClient.java
+/home/oppi11/pro01/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/LoginController.java
+/home/oppi11/pro01/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/BillerController.java
+/home/oppi11/pro01/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/AdminController.java
+=======
+/home/oppi9/Desktop/Asterix pr001/agileo_projekti_Jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/SecretaryController.java
+/home/oppi9/Desktop/Asterix pr001/agileo_projekti_Jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/LoginController.java
+/home/oppi9/Desktop/Asterix pr001/agileo_projekti_Jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/SecureController.java
+/home/oppi9/Desktop/Asterix pr001/agileo_projekti_Jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/SalespersonController.java
+/home/oppi9/Desktop/Asterix pr001/agileo_projekti_Jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/AdminController.java
+/home/oppi9/Desktop/Asterix pr001/agileo_projekti_Jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/CustomerServantController.java
+/home/oppi9/Desktop/Asterix pr001/agileo_projekti_Jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/util/SalasanaKryptaajaKomentoriviClient.java
+/home/oppi9/Desktop/Asterix pr001/agileo_projekti_Jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/BossController.java
+/home/oppi9/Desktop/Asterix pr001/agileo_projekti_Jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/TechnicianController.java
+/home/oppi9/Desktop/Asterix pr001/agileo_projekti_Jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/BillerController.java
+>>>>>>> dc6270d5568ec1d70cd94db1afdba88c9ab4d711
+>>>>>>> 8d0191d8f0e9101a5c29e99ae9d6aa72d7367900

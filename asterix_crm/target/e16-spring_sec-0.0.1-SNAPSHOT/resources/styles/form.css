@@ -6,7 +6,7 @@ fieldset {
 	background-color: #FAFAFA;
 	border-color: #333333;
 	border-width: 2px;
-	border-style: dashed;
+	border-style: solid;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;

@@ -3,11 +3,8 @@
 /home/oppi6/git/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/BillerController.java
 /home/oppi6/git/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/AdminController.java
 /home/oppi6/git/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/CustomerServantController.java
-/home/oppi6/git/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/TechnicianController.java
-/home/oppi6/git/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/service/MiscServiceImpl.java
-/home/oppi6/git/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/service/MiscService.java
-/home/oppi6/git/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/util/SalasanaKryptaajaKomentoriviClient.java
-/home/oppi6/git/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/MiscController.java
 /home/oppi6/git/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/SalespersonController.java
 /home/oppi6/git/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/LoginController.java
+/home/oppi6/git/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/TechnicianController.java
 /home/oppi6/git/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/controller/BossController.java
+/home/oppi6/git/agileo_projekti_jmpt/asterix_crm/src/main/java/fi/agileo/spring/e16/util/SalasanaKryptaajaKomentoriviClient.java

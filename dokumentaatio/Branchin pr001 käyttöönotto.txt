@@ -66,7 +66,7 @@ Myöhemmin käyttöönoton jälkeen:
 
 3. Aja terminaalissa käskyt (ensimmäinen varmuuden vuoksi): 
 3.1. git checkout pr001
-3.2. git pull
+3.2. git pull origin pr001
 
 4. Kun alat muokkaaman jotain tiedostoa, toimi seuraavasti:
 4.1. aja terminaalissa projektille: git pull

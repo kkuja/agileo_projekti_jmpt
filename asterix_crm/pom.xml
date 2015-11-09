@@ -1,12 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>fi.agileo.spring</groupId>
-	<artifactId>e16-spring_sec</artifactId>
+	<groupId>jtmp.asterix.spring</groupId>
+	<artifactId>asterix_crm</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>Esimerkki 16</name>
-	<description>Esimerkki 16 (Spring Security)</description>
+	<name>Asterix CRM</name>
 
 	<properties>
 		<spring.version>4.0.0.RELEASE</spring.version>
@@ -109,4 +108,5 @@
 
 	</dependencies>
 
+	<description>Asterix asiakkuudenhallintajärjestelmä</description>
 </project>

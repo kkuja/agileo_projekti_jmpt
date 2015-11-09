@@ -60,10 +60,21 @@ PÄIVITTÄINEN TYÖSKENTELY BRANCHISSA PR001
 
 Myöhemmin käyttöönoton jälkeen: 
 
-1. Mene Terminalissa projektin workspacen kansioon.
+1. Avaa http://91.157.145.211:9090/ ja katso onko projektin buildissa asterix pr001:ssä tullut jotain virheitä, ja ovatko yksikkötestit menneet läpi.
 
-2. 
+2. Mene Terminalissa projektin workspacen kansioon.
 
+3. Aja terminaalissa käsky: git pull
 
+4. Kun alat muokkaaman jotain tiedostoa, toimi seuraavasti:
+4.1. aja terminaalissa projektille: git pull
+4.2. Avaa tiedosto STS:ssä
+4.3. Sulje STS
+4.4. Aja: git add tiedostonimi
+4.5. Aja: git commit -m "Lyhyt kuvaus muutoksesta"
+4.6. Aja: git push origin pr001
 
-
+5. Päivän päätteeksi aja terminaalissa (optionaalinen, jos et noudattanut kohdan 4 toimintoja): 
+5.1. git add {muuttuneet tiedostot}
+5.2. git commit -m "Kuvaus muutoksista"
+5.3. git push origin pr001

@@ -15,7 +15,7 @@
 
 <table style="width:100%" border="0">
   <tr>
-    <td align="left">Logged in: <sec:authentication property="principal.username"/></td>
+	<td align="left"><img src="../resources/images/user.png" title=<sec:authentication property="principal.username"/>  style="width:40px;height:40px;"> Logged in as <sec:authentication property="principal.username"/></td>    
     <td align="right"><a href="../j_spring_security_logout" > Log out</a></td>
   </tr>
 </table> 

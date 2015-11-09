@@ -16,10 +16,11 @@
 <sec:authentication property="authorities" var="roles" scope="page" />
 <table style="width:100%" border="0">
   <tr>
-    <td align="left"><img src="../../resources/images/user.png" title="Logged in"  style="width:40px;height:40px;"><sec:authentication property="principal.username"/></td>
+    <td align="left"><img src="../../resources/images/user.png" title=<sec:authentication property="principal.username"/>  style="width:40px;height:40px;"> Logged in as <sec:authentication property="principal.username"/></td>
+<%-- <sec:authentication property="principal.username"/> --%>	
 	<c:choose>
 	    <c:when test="${fn:length(roles)>1}">    
-    		<td align="center"><a href="../main">Main page</a></td>
+    		<td align="left"><a href="../main">Main page</a></td>
     	</c:when> 
 	</c:choose>     
     <td align="right"><a href="../../j_spring_security_logout" > Log out</a></td>

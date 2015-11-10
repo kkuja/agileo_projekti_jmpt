@@ -1,4 +1,4 @@
-package fi.agileo.spring.e16.controller;
+package fi.asterix.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

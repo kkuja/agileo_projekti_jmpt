@@ -1,4 +1,4 @@
-package fi.agileo.spring.e16.controller;
+package fi.asterix.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping(value="/secure/biller")
-public class BillerController {
+@RequestMapping(value = "/secure")
+public class SecureController {
 
-	@RequestMapping(value = "/tools", method = RequestMethod.GET)
+	@RequestMapping(value = "/main", method = RequestMethod.GET)
 	public String paasivu(Model model) {
-
-		return "secure/biller/tools";
+		return "secure/main";
 	}
+
 }

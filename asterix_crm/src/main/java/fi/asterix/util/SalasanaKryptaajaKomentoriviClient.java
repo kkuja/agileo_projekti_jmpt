@@ -1,4 +1,4 @@
-package fi.agileo.spring.e16.util;
+package fi.asterix.util;
 import java.util.Scanner;
 
 import org.springframework.security.crypto.password.StandardPasswordEncoder;

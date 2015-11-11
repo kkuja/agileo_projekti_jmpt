@@ -1,0 +1,13 @@
+Tietokantaan lisättyjä käyttäjiä testaamista varten:
+
+username	password	enabled	firstname	lastname	käyttäjäroolit
+	
+pomo		pomonpassu	  	1	Bruce		Springsteen		ROLE_BOSS
+myyjä		myyjanpassu	  	1 	Jethro		Rostedt			ROLE_SALESPERSON
+teknikko	teknikonpassu 	1	Timo		Terävä			ROLE_TECHNICIAN
+aspalvelija	appassu		   	1	Antti		Avulias			ROLE_CUSTOMER_SERVANT
+sihteeri	sihteerinpassu	1	Sanna		Sihteerikkö		ROLE_SECRETARY
+laskuttaja	laskuttajapassu 1	Lasse		Laatunen		ROLE_BILLER
+admin99		adminpassu		1	Paavo		Pääkäyttäjä		ROLE_ADMIN
+juuseri		userpassu		1	Pekka		Peruskäyttäjä	ROLE_USER
+adminpomo	adminbosspassu	1	Linus		Torvalds		ROLE_ADMIN, ROLE_BOSS

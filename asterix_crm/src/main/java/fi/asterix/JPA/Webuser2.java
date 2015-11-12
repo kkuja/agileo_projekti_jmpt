@@ -12,7 +12,7 @@ import org.hibernate.annotations.Type;
  */
 @Entity
 @Table(name="webuser2")
-@NamedQueries({ @NamedQuery(name = "haeKaikki", query = "SELECT w from Webuser2 w")})
+//@NamedQueries({ @NamedQuery(name = "haeKaikki", query = "SELECT w from Webuser2 w")})
 public class Webuser2 implements Serializable {
 
 	@Id

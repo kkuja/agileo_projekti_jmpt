@@ -21,11 +21,10 @@ public class AdminController {
 
 	@RequestMapping(value = "/tools", method = RequestMethod.GET)
 	public String paasivu(Model model) {
-				
+		
 		List<Authority> roolit = authDAO.findAll();
 
-		model.addAttribute("roolit", roolit);		
-
+		model.addAttribute("roolit", roolit);
 		return "secure/admin/tools";
 	}
 }

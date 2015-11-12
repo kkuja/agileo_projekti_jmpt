@@ -12,12 +12,13 @@
 	href="../../resources/styles/common.css">
 </head>
 <body>
+
 <!-- Roles display -->
 <sec:authentication property="authorities" var="roles" scope="page" />
 <table style="width:100%" border="0">
   <tr>
     <td align="left"><img src="../../resources/images/user.png" title=<sec:authentication property="principal.username"/>  style="width:40px;height:40px;"> Logged in as <sec:authentication property="principal.username"/></td>
-<%-- <sec:authentication property="principal.username"/> --%>	
+
 	<c:choose>
 	    <c:when test="${fn:length(roles)>1}">    
     		<td align="left"><a href="../main">Main page</a></td>

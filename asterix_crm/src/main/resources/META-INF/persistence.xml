@@ -5,6 +5,16 @@
 		<class>fi.asterix.JPA.HelloEntity</class> 
 		<class>fi.asterix.JPA.Webuser2</class> 
 		<class>fi.asterix.JPA.Authority</class>
+		<class>fi.asterix.JPA.Address</class> 
+		<class>fi.asterix.JPA.Company</class>
+		<class>fi.asterix.JPA.State</class>
+		<class>fi.asterix.JPA.Customer</class>
+		<class>fi.asterix.JPA.Employee</class>
+		<class>fi.asterix.JPA.Invoice</class>
+		<class>fi.asterix.JPA.Note</class>
+		<class>fi.asterix.JPA.DeliveryObject</class>
+		<class>fi.asterix.JPA.Delivery</class>
+		<class>fi.asterix.JPA.Deal</class>
 			<properties>
 				<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/asterixdb"/>
 				<property name="javax.persistence.jdbc.user" value="asterix_user"/>

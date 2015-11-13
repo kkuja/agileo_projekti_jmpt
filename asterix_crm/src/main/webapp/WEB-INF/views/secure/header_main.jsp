@@ -38,31 +38,31 @@ TÄMÄ TIEDOSTO EI OLE KÄYTÖSSÄ MUUALLA KUIN main.jsp
 <option>Choose role</option>
 		
 		<sec:authorize access="hasRole('ROLE_ADMIN')">
-			<option onClick="changeToolSet('admin/tools');">Admin tools</option>
+			<option onClick="changeToolSet('secure/admin/tools');">Admin tools</option>
 		</sec:authorize>
 		
 		<sec:authorize access="hasRole('ROLE_BOSS')">
-			<option onClick="changeToolSet('boss/tools');">Boss tools</option>
+			<option onClick="changeToolSet('secure/boss/tools');">Boss tools</option>
 		</sec:authorize>
 		
 		<sec:authorize access="hasRole('ROLE_BILLER')">
-			<p><a href="/biller/tools">Boss tools</a></p>		
+			<option onClick="changeToolSet('secure/biller/tools');">Biller tools</option>
 		</sec:authorize>
 		
 		<sec:authorize access="hasRole('ROLE_SALESPERSON')">
-			<p><a href="/salesperson/tools">Salesperson tools</a></p>
+			<option onClick="changeToolSet('secure/salesperson/tools');">Salesperson tools</option>
 		</sec:authorize>
 		
 		<sec:authorize access="hasRole('ROLE_TECHNICIAN')">
-			<p><a href="/technician/tools">Technician tools</a></p>
+			<option onClick="changeToolSet('secure/technician/tools');">Technician tools</option>
 		</sec:authorize>
 		
 		<sec:authorize access="hasRole('ROLE_CUSTOMER_SERVANT')">
-			<p><a href="/customerservant/tools">Customer servant tools</a></p>
+			<option onClick="changeToolSet('secure/customerservant/tools');">Customer servant tools</option>
 		</sec:authorize>
 		
 		<sec:authorize access="hasRole('ROLE_SECRETARY')">
-			<p><a href="/secretary/tools">Secretary tools</a></p>
+			<option onClick="changeToolSet('secure/secretary/tools');">Secretary tools</option>
 		</sec:authorize>
 </select>
 		    

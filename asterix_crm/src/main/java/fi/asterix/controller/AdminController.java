@@ -27,4 +27,12 @@ public class AdminController {
 		model.addAttribute("roolit", roolit);
 		return "secure/admin/tools";
 	}
+	@RequestMapping(value = "/adduser", method = RequestMethod.GET)
+	public String adduser(Model model) {
+		
+		List<Authority> roolit = authDAO.findAll();
+
+		model.addAttribute("roolit", roolit);
+		return "secure/admin/adduser";
+	}
 }

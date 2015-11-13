@@ -9,14 +9,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Asterix CRM System</title>
 <link rel="stylesheet" type="text/css"
-	href="../../resources/styles/common.css">
+	href="../resources/styles/common.css">
 </head>
 <body>
 
 <table style="width:100%" border="0">
   <tr>
-    <td align="left">Logged in: <sec:authentication property="principal.username"/></td>
-    <!-- <td align="center"><a href="../main">Main page</a></td> -->
+	<td align="left"><img src="../resources/images/user.png" title=<sec:authentication property="principal.username"/>  style="width:40px;height:40px;"> Logged in as <sec:authentication property="principal.username"/></td>    
     <td align="right"><a href="../j_spring_security_logout" > Log out</a></td>
   </tr>
 </table> 

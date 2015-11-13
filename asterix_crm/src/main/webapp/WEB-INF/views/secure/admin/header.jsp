@@ -1,14 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
     <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>        
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<!-- 
-
-TÄMÄ TIEDOSTO EI OLE KÄYTÖSSÄ
-
- -->
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -70,13 +65,14 @@ TÄMÄ TIEDOSTO EI OLE KÄYTÖSSÄ
 </c:choose>
 </div>
 
-<%-- <%@ include file="navi.jsp" %> --%>
-<ul>
-	<li><a href="#">Add user</a></li>
-	<li><a href="#">List users</a></li>
-	<li><a href="#">My profile</a></li>	
-	<li><a href="../../j_spring_security_logout" > Log out</a></li>
-</ul>
+
+<%@ include file="navi.jsp" %>
+<!-- <ul> -->
+<!-- 	<li><a href="#">Add user</a></li> -->
+<!-- 	<li><a href="#">List users</a></li> -->
+<!-- 	<li><a href="#">My profile</a></li>	 -->
+<!-- 	<li><a href="../../j_spring_security_logout" > Log out</a></li> -->
+<!-- </ul> -->
 
 
 </div>

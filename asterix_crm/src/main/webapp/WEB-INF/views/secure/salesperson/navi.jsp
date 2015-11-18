@@ -1,6 +1,7 @@
 <ul>
+	<li><a href="tools">Frontpage</a></li>
 	<li><a href="#">Add customer</a></li>
-	<li><a href="#">Add company</a></li>
+	<li><a href="addcompany">Add company</a></li>
 	<li><a href="#">Add deal</a></li>
 	<li><a href="#">Customers</a></li>
 	<li><a href="#">Companies</a></li>

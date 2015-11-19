@@ -9,7 +9,6 @@ import javax.persistence.*;
  *
  */
 @Entity
-
 public class Customer implements Serializable {
 
 	@Id
@@ -20,7 +19,12 @@ public class Customer implements Serializable {
 	private Company company;
 	private String email;
 	private String phone;
-	private byte[] photo;
+	private String photo;
+	/*
+	 * photo: Alkuperäinen tyyppi tietokannassa oli: longblob => Vaihdetty
+	 * varchariksi (vaihda tarvittaessa takaisin)
+	 */
+	// Alkuperäinen oli: private byte[] photo;
 	private Address addess;
 	private Employee salesPerson;
 	private State customerState;
@@ -64,13 +68,12 @@ public class Customer implements Serializable {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}   
-	public byte[] getPhoto() {
-		return this.photo;
-	}
-
-	public void setPhoto(byte[] photo) {
-		this.photo = photo;
-	}   
+	/* Alkuperäinen tietotyyppi byte[] ei ole käytössä */
+	/*
+	 * public byte[] getPhoto() { return this.photo; }
+	 * 
+	 * public void setPhoto(byte[] photo) { this.photo = photo; }
+	 */
 	public Address getAddess() {
 		return this.addess;
 	}
@@ -98,5 +101,11 @@ public class Customer implements Serializable {
 	public void setCompany(Company company) {
 		this.company = company;
 	}
-   
+   	public String getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
 }

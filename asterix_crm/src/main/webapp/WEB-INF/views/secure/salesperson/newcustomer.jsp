@@ -37,24 +37,28 @@
 			</tr>
 			<tr>
 				<td><label for="company">Company: </label></td>
-				<td><form:input path="company.id" id="company" value="" /></td>
+				<!-- td><form:input path="company.id" id="company" value="" /></td-->
+				<td><form:select path="company.id" items="${companies}" /></td>
 				<td><form:errors path="company" cssClass="error" /></td>
 			</tr>
 			<tr>
 				<td><label for="addess">Address: </label></td>
-				<td><form:input path="addess.id" id="addess" value=""/></td>
+				<!-- >td><form:input path="addess.id" id="addess" value=""/></td-->
+				<td><form:select path="addess.id" items="${addresses}" /></td>
 				<td><form:errors path="addess" cssClass="error" /></td>
 			</tr>
 
 			<!-- jatkokehityksestä: Tässä pitäisi hakea salesPersonit kannasta ja valita niistä yksi -->
 			<tr>
 				<td><label for="salesPerson">Salesperson: </label></td>
-				<td><form:input path="salesPerson.id" id="salesPerson" /></td>
+				<!-- <td><form:input path="salesPerson.id" id="salesPerson" /></td-->
+				<td><form:select path="salesPerson.id" items="${salespersons}" /></td>				
 				<td><form:errors path="salesPerson" cssClass="error" /></td>
 			</tr>
 			<tr>
 				<td><label for="customerState">Customer's state: </label></td>
-				<td><form:input path="customerState.id" id="customerState" value="" /></td>
+				<!-- <td><form:input path="customerState.id" id="customerState" value="" /></td-->
+				<td><form:select path="customerState.id" items="${customerstates}" /></td>				
 				<td><form:errors path="customerState" cssClass="error" /></td>
 			</tr>
 			

@@ -24,10 +24,12 @@ TÄMÄ TIEDOSTO EI OLE KÄYTÖSSÄ MUUALLA KUIN main.jsp
 <body>
 <!-- Roles display -->
 <sec:authentication property="authorities" var="roles" scope="page" />
+<!-- Yläpalkin aloitus -->
 <div id="top">
-<div id="logocontainer"><img src="../resources/images/user.png" /></div>
-<div id="loggedin">Logged in: <sec:authentication property="principal.username"/></div>
+<div id="logocontainer"><img src="../resources/images/asterix_logo_lapinakyva.png" /></div>
+<div id="loggedin">Logged in: <sec:authentication property="principal.username"/><br /><a href="../../j_spring_security_logout" > Log out</a></div>
 </div>
+<!-- Yläpalkin lopetus -->
 <div id="navi">
 <sec:authentication property="authorities" var="roles" scope="page" />
 <div id="rolecontainer">

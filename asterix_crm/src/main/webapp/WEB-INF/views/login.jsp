@@ -22,9 +22,12 @@
 <body>
 <!-- Roles display -->
 <sec:authentication property="authorities" var="roles" scope="page" />
+<!-- Yläpalkin aloitus -->
 <div id="top">
-<div id="logocontainer"><img src="resources/images/asterix.png" /></div>
+<div id="logocontainer"><img src="resources/images/asterix_logo_lapinakyva.png" /></div>
+<div id="loggedin"></div>
 </div>
+<!-- Yläpalkin lopetus -->
 <div id="navi">
 <sec:authentication property="authorities" var="roles" scope="page" />
 <div id="rolecontainer">

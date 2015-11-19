@@ -19,10 +19,13 @@
 <body>
 <!-- Roles display -->
 <sec:authentication property="authorities" var="roles" scope="page" />
+<!-- Yläpalkin aloitus -->
 <div id="top">
-<div id="logocontainer"><img src="../../resources/images/asterix.png" /></div>
-<div id="loggedin">Logged in: <sec:authentication property="principal.username"/></div>
+<div id="logocontainer"><img src="../../resources/images/asterix_logo_lapinakyva.png" /></div>
+<div id="loggedin">Logged in: <sec:authentication property="principal.username"/><br /><a href="../../j_spring_security_logout" > Log out</a></div>
 </div>
+<!-- Yläpalkin lopetus -->
+
 <div id="navi">
 <sec:authentication property="authorities" var="roles" scope="page" />
 <div id="rolecontainer">
@@ -67,12 +70,6 @@
 
 
 <%@ include file="navi.jsp" %>
-<!-- <ul> -->
-<!-- 	<li><a href="#">Add user</a></li> -->
-<!-- 	<li><a href="#">List users</a></li> -->
-<!-- 	<li><a href="#">My profile</a></li>	 -->
-<!-- 	<li><a href="../../j_spring_security_logout" > Log out</a></li> -->
-<!-- </ul> -->
 
 
 </div>

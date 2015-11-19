@@ -1,3 +1,4 @@
-<ul>
-	<li><a href="../../j_spring_security_logout" > Log out</a></li>
+<ul id='menu'>
+	<li><a href='#'>Placeholder for link</a></li>
+	<li><a href='#'>Placeholder for link</a></li>
 </ul>

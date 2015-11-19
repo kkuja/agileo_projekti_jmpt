@@ -6,7 +6,6 @@
 <%-- 	    <c:if test="${fn:length(roles)>1}">	
 	    	<li><a href="../main">Main page</a></li>
 	    </c:if> --%>
-	<li><a href="../../j_spring_security_logout" > Log out</a></li>
 </ul> 
 
 <!-- <table>

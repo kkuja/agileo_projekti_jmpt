@@ -25,7 +25,7 @@ TÄMÄ TIEDOSTO EI OLE KÄYTÖSSÄ MUUALLA KUIN main.jsp
 <!-- Roles display -->
 <sec:authentication property="authorities" var="roles" scope="page" />
 <div id="top">
-<div id="logocontainer"><img src="../resources/images/asterix.png" /></div>
+<div id="logocontainer"><img src="../resources/images/user.png" /></div>
 <div id="loggedin">Logged in: <sec:authentication property="principal.username"/></div>
 </div>
 <div id="navi">

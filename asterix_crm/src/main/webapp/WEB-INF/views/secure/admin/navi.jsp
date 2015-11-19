@@ -3,9 +3,9 @@
 	<li><a href="adduser">Add user</a></li>
 	<li><a href="listusers">List users</a></li>
 	<li><a href="#">My profile</a></li>	
-	    <c:if test="${fn:length(roles)>1}">	
+<%-- 	    <c:if test="${fn:length(roles)>1}">	
 	    	<li><a href="../main">Main page</a></li>
-	    </c:if>
+	    </c:if> --%>
 	<li><a href="../../j_spring_security_logout" > Log out</a></li>
 </ul> 
 

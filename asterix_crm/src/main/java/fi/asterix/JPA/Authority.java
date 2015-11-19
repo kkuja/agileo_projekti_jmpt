@@ -13,7 +13,7 @@ import javax.persistence.*;
 public class Authority implements Serializable {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)		
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String role;
 	private static final long serialVersionUID = 1L;

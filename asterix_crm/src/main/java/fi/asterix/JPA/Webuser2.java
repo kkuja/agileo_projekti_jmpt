@@ -2,6 +2,8 @@ package fi.asterix.JPA;
 
 import java.io.Serializable;
 import java.lang.String;
+import java.util.List;
+
 import javax.persistence.*;
 
 import org.hibernate.annotations.Type;
@@ -20,6 +22,14 @@ public class Webuser2 implements Serializable {
 	private int id;
 	private String username;
 	private String password_encrypted;	
+	@OneToMany(fetch=FetchType.EAGER)
+	@JoinTable
+	(
+		name="webuser2_authority",
+		joinColumns={  @JoinColumn(name="webuser2_id", referencedColumnName="id") },
+		inverseJoinColumns={ @JoinColumn(name="authority_id", referencedColumnName="id", unique=true)}
+	)
+	private List<Authority> authorities;
 	@Column(nullable = false)
 	@Type(type = "org.hibernate.type.NumericBooleanType")	
 	private boolean enabled;
@@ -72,5 +82,20 @@ public class Webuser2 implements Serializable {
 	public void setLastname(String lastname) {
 		this.lastname = lastname;
 	}
+	
+	public List<Authority> getAuthorities() {
+		return authorities;
+	}
+	
+	public void setAuthorities(List<Authority> authorities) {
+		this.authorities = authorities;
+	}
+	
+	@Override
+	public String toString() {
+		return "Webuser2 [id=" + id + ", username=" + username + ", password_encrypted=" + password_encrypted
+				+ ", authorities=" + authorities + ", enabled=" + enabled + ", firstname=" + firstname + ", lastname="
+				+ lastname + "]";
+	}	
    
 }

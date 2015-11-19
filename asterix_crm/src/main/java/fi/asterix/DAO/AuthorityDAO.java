@@ -14,6 +14,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import fi.asterix.JPA.Authority;
+import fi.asterix.util.EntityManagerUtil;
 
 import org.springframework.transaction.annotation.Propagation;
 
@@ -24,7 +25,7 @@ public class AuthorityDAO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@PersistenceContext
-	private EntityManager em;
+	private EntityManager em = EntityManagerUtil.getEntityManager();
 	
 	public EntityManager getEm() {
 		return em;
@@ -35,15 +36,14 @@ public class AuthorityDAO implements Serializable {
 	}
 	
 	public AuthorityDAO() {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("asterix_crm");
-		this.em = emf.createEntityManager();
+		super();
 	}
 	
 	@SuppressWarnings("unchecked")
 	public List<Authority> findAll() {
 
-		List<Authority> roolit = (List<Authority>) em.createQuery("select a from Authority a").getResultList();
-		return roolit;
+		List<Authority> roles = (List<Authority>) em.createQuery("select a from Authority a").getResultList();
+		return roles;
 	}	
 	
 	@SuppressWarnings("unchecked")
@@ -53,9 +53,9 @@ public class AuthorityDAO implements Serializable {
 		return roles;
 	}	
 	
-	public Authority save(Authority role) {
+	public Authority save(Authority role) {	
 		EntityTransaction ta = em.getTransaction();
-		ta.begin();		
+		ta.begin();	
 		em.persist(role);
 		ta.commit();
 		return role;

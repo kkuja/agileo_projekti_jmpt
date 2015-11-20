@@ -1,48 +1,50 @@
 
 <%@ include file="header.jsp" %>
-<h1>Add user</h1>
+<h1>Create new user account</h1>
 
-<div id="adduser">
-	<form method="post" action="tools">
-	<fieldset>
-	<legend>Add new user:</legend>
-	<table>
-		<tr>
-			<td><label for="name">Username</label></td>
-			<td><input type="text" name="username"></td>
-		</tr>
-		<tr>
-			<td><label for="firstname">Firstname</label></td>
-			<td> <input type="text" name="firsname"></td>
-		</tr>
-		<tr>
-			<td><label for="lastname">Lastname</label></td>
-			<td> <input type="text" name="lastname"></td>
-		</tr>
-		<tr>
-			<td><label for="password">Password</label></td>
-			<td><input type="password" name="password"></td>
-		</tr>
-		<tr>
-			<td><label for="password2">Confirm password</label></td>
-			<td><input type="password" name="password2"></td>
-		</tr>
-		
-		<c:forEach var="r" items="${roolit}">
-			<tr>
-				<td><input type="checkbox" name="vehicle" value="Bike"></td><td> ${r.role}</td>	
-			</tr>				
-		</c:forEach>	
 
+<form:form method="POST" modelAttribute="newuser">
+<fieldset>
+<legend><b>Add new user</b></legend>
+<table>
 		<tr>
-			<td>&nbsp;</td>
-			<td><button type="submit">Add new user</button></td>
-		</tr>		
-	</table>
+		<td><label for="username">Username: </label></td>
+		<td><form:input path="username" id="username" /></td>	
+	</tr>
+	<tr>
+		<td><label for="firstname">Firstname: </label></td>
+		<td><form:input path="firstname" id="firstname" /></td>
+		<td><form:errors path="firstname" cssClass="error" /></td>
+	</tr>
+	<tr>
+		<td><label for="lastname">Lastname: </label></td>
+		<td><form:input path="lastname" id="lastname" /></td>
+		<td><form:errors path="lastname" cssClass="error" /></td>
+	</tr>
+	<tr>
+		<td><label for="password_encrypted">Password: </label></td>
+		<td><form:password path="password_encrypted" id="password_encrypted" /></td>
+		<td><form:errors path="password_encrypted" cssClass="error" /></td>
+	</tr> 
+
+	<tr><td colspan="2"><h4>Select user roles:</h4></td></tr>
 	
-	
-	</fieldset>
-	</form>
-</div>
+ 	<c:forEach var="r" items="${roolit}">
+		<tr>
+		<td><form:checkbox path="authorities" id="authorities" value="${r.id}"/></td>
+		<td><label for="authorities">${r.role} </label></td>		
+		<td><form:errors path="authorities" cssClass="error" /></td>		
+		</tr>				
+	</c:forEach>	
+
+	<tr>
+		<td> <input type="hidden" name="enabled" value="1"> </td>
+		<td><button type="submit">Add new user</button></td>
+	</tr>		
+</table>
+
+
+</fieldset>
+</form:form>
 
 <%@ include file="../footer.jsp" %>

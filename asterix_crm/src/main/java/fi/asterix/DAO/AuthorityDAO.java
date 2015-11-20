@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import fi.asterix.JPA.Address;
 import fi.asterix.JPA.Authority;
 import fi.asterix.util.EntityManagerUtil;
 
@@ -69,5 +70,10 @@ public class AuthorityDAO implements Serializable {
 	public void delete(Authority role) {
 		em.remove(role);
 	}	
+	
+	public List<Authority> getRoles() {
+		
+		return  null;
+	}
 	
 }

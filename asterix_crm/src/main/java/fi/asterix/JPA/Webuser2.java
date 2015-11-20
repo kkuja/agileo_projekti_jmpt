@@ -7,6 +7,7 @@ import java.util.List;
 import javax.persistence.*;
 
 import org.hibernate.annotations.Type;
+import org.springframework.security.crypto.password.StandardPasswordEncoder;
 
 /**
  * Entity implementation class for Entity: webuser2
@@ -40,6 +41,7 @@ public class Webuser2 implements Serializable {
 	public Webuser2() {
 		super();
 	}   
+	
 	public int getId() {
 		return this.id;
 	}
@@ -47,6 +49,7 @@ public class Webuser2 implements Serializable {
 	public void setId(int id) {
 		this.id = id;
 	}   
+	
 	public String getUsername() {
 		return this.username;
 	}
@@ -54,13 +57,16 @@ public class Webuser2 implements Serializable {
 	public void setUsername(String username) {
 		this.username = username;
 	}   
+	
 	public String getPassword_encrypted() {
 		return this.password_encrypted;
 	}
 
 	public void setPassword_encrypted(String password_encrypted) {
-		this.password_encrypted = password_encrypted;
+		StandardPasswordEncoder spe = new StandardPasswordEncoder();
+		this.password_encrypted = spe.encode(password_encrypted);
 	}   
+	
 	public boolean getEnabled() {
 		return this.enabled;
 	}
@@ -89,6 +95,10 @@ public class Webuser2 implements Serializable {
 	
 	public void setAuthorities(List<Authority> authorities) {
 		this.authorities = authorities;
+	}
+	
+	public void addRole(Authority userRole) {
+		this.authorities.add(userRole);
 	}
 	
 	@Override

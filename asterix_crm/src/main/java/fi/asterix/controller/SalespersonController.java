@@ -50,7 +50,8 @@ public class SalespersonController {
 	}
 
 	@RequestMapping(value = "/savecompany", method = RequestMethod.POST)
-	public String saveCompany(Model model) {
+	public String saveCompany(@Valid Company tk, Model model) {
+		System.out.println(tk);
 		return "secure/salesperson/savecompany";
 	}
 

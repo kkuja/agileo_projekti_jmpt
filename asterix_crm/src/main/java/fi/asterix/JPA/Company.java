@@ -43,5 +43,9 @@ public class Company implements Serializable {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
+	@Override
+	public String toString() {
+		return "Company [id=" + id + ", name=" + name + ", address=" + address + "]";
+	}
    
 }

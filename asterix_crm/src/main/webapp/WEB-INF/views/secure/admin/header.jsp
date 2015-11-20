@@ -51,16 +51,22 @@ ul#menu li a:hover {
 
 <!-- Roles display -->
 <sec:authentication property="authorities" var="roles" scope="page" />
-
-<!-- Logging information -->
+<!-- 
+<! -- Logging information -- >
 <img src="../../resources/images/user.png" height="40" width="40"/>
 	Logged in: <sec:authentication property="principal.username"/>
 	
-<!-- Log out link-->
+<! -- Log out link-- >
 <div id="logout">
 	<a href="../../j_spring_security_logout" > Log out</a>
 </div>
-
+-->
+<!-- Yläpalkin aloitus -->
+<div id="top">
+<div id="logocontainer"><img src="../../resources/images/asterix_logo_lapinakyva.png" /></div>
+<div id="loggedin">Logged in: <sec:authentication property="principal.username"/><br /><a href="../../j_spring_security_logout" > Log out</a></div>
+</div>
+<!-- Yläpalkin lopetus -->
 
 
 <div id="navi">
@@ -106,12 +112,6 @@ ul#menu li a:hover {
 
 
 <%@ include file="navi.jsp" %>
-<!-- <ul> -->
-<!-- 	<li><a href="#">Add user</a></li> -->
-<!-- 	<li><a href="#">List users</a></li> -->
-<!-- 	<li><a href="#">My profile</a></li>	 -->
-<!-- 	<li><a href="../../j_spring_security_logout" > Log out</a></li> -->
-<!-- </ul> -->
 
 
 </div>

@@ -28,14 +28,18 @@
 	</tr> 
 
 	<tr><td colspan="2"><h4>Select user roles:</h4></td></tr>
+	<tr>
+		<td><form:checkboxes path="authorities" id="authorities" items="${authorities}" /></td>
+		<td><form:errors path="authorities" cssClass="error" /></td>
+	</tr>
 	
- 	<c:forEach var="r" items="${roolit}">
+<%--  	<c:forEach var="r" items="${authorities}">
 		<tr>
-		<td><form:checkbox path="authorities" id="authorities" value="${r.id}"/></td>
+		<td><form:checkbox path="role.id" id="authorities" value="${r.id}"/></td>
 		<td><label for="authorities">${r.role} </label></td>		
 		<td><form:errors path="authorities" cssClass="error" /></td>		
 		</tr>				
-	</c:forEach>	
+	</c:forEach> --%>	
 
 	<tr>
 		<td> <input type="hidden" name="enabled" value="1"> </td>

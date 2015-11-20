@@ -44,12 +44,12 @@ public class AdminController {
 	@RequestMapping(value = "/adduser", method = RequestMethod.GET)
 	public String adduser(Model model) {
 		
-		List<Authority> roolit = authDAO.findAll();
+		List<Authority> authorities = authDAO.findAll();
 		Webuser2 wu = new Webuser2();
 //		List<Authority> auth= new ArrayList<Authority>();
 //		wu.setAuthorities(auth);
 		model.addAttribute("newuser", wu);
-		model.addAttribute("roolit", roolit);
+		model.addAttribute("authorities", authorities);
 		return "secure/admin/adduser";
 	}
 	
@@ -58,13 +58,16 @@ public class AdminController {
 	public String addNew(@Valid Webuser2 wu, BindingResult result, SessionStatus state, ModelMap model) {
 		
 		System.out.println(wu);	
+		System.out.println(result);
+		System.out.println(model);
+		
 		
 		// Tehty demoamista varten. Ei vielä lisää valittuja rooleja
-		List<Authority> roles = new ArrayList<Authority>();
-		Authority auth = new Authority();
-		auth.setRole("ROLE_ADMIN");
-		roles.add(auth);	
-		wu.setAuthorities(roles);
+//		List<Authority> roles = new ArrayList<Authority>();
+//		Authority auth = new Authority();
+//		auth.setRole("ROLE_ADMIN");
+//		roles.add(auth);	
+//		wu.setAuthorities(roles);
 		
 		System.out.println(wu);
 		// Tiedot pitää hakea tallentamisen jälkeen tietokannasta ja palautetaan haettu käyttäjä
